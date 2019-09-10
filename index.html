@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/637872b938.js"></script>
+    <title>Tetris</title>
+    <style>
+        body {
+            background: #202028;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        canvas {
+            border: solid .2em #fff;
+            height: 90vh;
+        }
+
+        span {
+            font-size: 20px;
+            margin: 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="score"></div>
+
+    <canvas id='tetris' width="240" height="400"></canvas>
+    <div> <span class="arrow"><i class="fas fa-arrow-left"><br />move to the left</i></span>
+        <span class="arrow"><i class="fas fa-arrow-up"><br />rotate</i></span>
+        <span class="arrow"><i class="fas fa-arrow-right"><br />move to the right</i></span> </div>
+    <script src='tetris.js'></script>
+
+</body>
+
+</html>
