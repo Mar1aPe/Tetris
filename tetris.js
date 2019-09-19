@@ -131,9 +131,9 @@ function rotate(matrix, dir) {
                 matrix[x][y],
                 matrix[y][x],
             ] = [
-                matrix[y][x],
-                matrix[x][y],
-            ];
+                    matrix[y][x],
+                    matrix[x][y],
+                ];
         }
     }
 
@@ -225,6 +225,8 @@ document.addEventListener('keydown', event => {
         playerRotate(-1);
     }
 });
+
+
 
 const colors = [
     null,
