@@ -1,6 +1,8 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
+
+
 context.scale(20, 20);
 
 function arenaSweep() {
@@ -131,9 +133,9 @@ function rotate(matrix, dir) {
                 matrix[x][y],
                 matrix[y][x],
             ] = [
-                    matrix[y][x],
-                    matrix[x][y],
-                ];
+                matrix[y][x],
+                matrix[x][y],
+            ];
         }
     }
 
@@ -228,6 +230,8 @@ document.addEventListener('keydown', event => {
 
 
 
+
+
 const colors = [
     null,
     '#FF0D72',
@@ -249,6 +253,8 @@ const player = {
     matrix: null,
     score: 0,
 };
+
+
 
 playerReset();
 updateScore();
